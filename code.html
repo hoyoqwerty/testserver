@@ -119,7 +119,7 @@
       var sensor_button = 0;
 
       var Module = {
-        INITIAL_MEMORY: 419430400,
+        INITIAL_MEMORY: 209715200,
         preRun: [],
         postRun: [],
         print: (function() {
@@ -197,7 +197,7 @@ Module.expectedDataFileDownloads++;
     }
     var PACKAGE_NAME = 'code.data';
     var REMOTE_PACKAGE_NAME = (Module['filePackagePrefixURL'] || '') + 'code.data';
-    var REMOTE_PACKAGE_SIZE = 3135670;
+    var REMOTE_PACKAGE_SIZE = 3135656;
     var PACKAGE_UUID = '51f84d03-0c74-4552-ac13-924e79e76977';
   
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
@@ -298,11 +298,11 @@ function assert(check, msg) {
       },
     };
 
-      new DataRequest(0, 4224, 0, 0).open('GET', 'code.ax');
-      new DataRequest(4224, 2598528, 0, 0).open('GET', '220.mp3');
-      new DataRequest(2598528, 2599197, 0, 0).open('GET', 'Data.txt');
-      new DataRequest(2599197, 3053542, 0, 0).open('GET', 'image.jpg');
-      new DataRequest(3053542, 3135670, 0, 0).open('GET', '”š”­1.mp3');
+      new DataRequest(0, 4210, 0, 0).open('GET', 'code.ax');
+      new DataRequest(4210, 2598514, 0, 0).open('GET', '220.mp3');
+      new DataRequest(2598514, 2599183, 0, 0).open('GET', 'Data.txt');
+      new DataRequest(2599183, 3053528, 0, 0).open('GET', 'image.jpg');
+      new DataRequest(3053528, 3135656, 0, 0).open('GET', '”š”­1.mp3');
 
 
     function processPackageData(arrayBuffer) {
